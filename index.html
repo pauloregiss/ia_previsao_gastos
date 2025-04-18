@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Previsor de Gastos</title>
+  <style>
+    body {
+      font-family: Montserrat, sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      background: white;
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .input-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .input-group label {
+      width: 40%;
+    }
+    .input-group input {
+      width: 55%;
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #1abc9c;
+    }
+    .resultado {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <h1>Previsor de Gastos Mensais</h1>
+  <form method="POST">
+    {% for i in range(1, 7) %}
+      <div class="input-group">
+        <label>Mês {{ i }}:</label>
+        <input type="number" name="mes[]" value="{{ i }}" readonly>
+        <input type="number" name="gasto[]" step="0.01" placeholder="Digite o gasto" required>
+      </div>
+    {% endfor %}
+    <button type="submit">Prever Próximo Mês</button>
+  </form>
+
+  {% if previsao %}
+    <div class="resultado">
+      <p>🧠 Previsão de gasto: <strong>R${{ previsao|round(2) }}</strong></p>
+    </div>
+  {% endif %}
+</body>
+</html>
