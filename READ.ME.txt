@@ -1,0 +1,16 @@
+# 🎬 Chatbot Recomendador de Filmes
+
+Este é um projeto simples em Python que simula um chatbot capaz de recomendar filmes com base no gênero informado pelo usuário.
+
+## Funcionalidades
+
+- Recebe entrada do usuário sobre o gênero preferido (ação, comédia, romance ou terror).
+- Sugere aleatoriamente um filme da categoria escolhida.
+- Código limpo, didático e fácil de expandir.
+
+## Como executar
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/chatbot-filmes.git
+cd chatbot-filmes

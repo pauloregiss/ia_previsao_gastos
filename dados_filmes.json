@@ -1,0 +1,50 @@
+[
+  {
+    "titulo": "Mad Max: Estrada da Fúria",
+    "genero": "ação",
+    "ano": "recente",
+    "final": "imprevisível"
+  },
+  {
+    "titulo": "John Wick",
+    "genero": "ação",
+    "ano": "recente",
+    "final": "feliz"
+  },
+  {
+    "titulo": "Click",
+    "genero": "comédia",
+    "ano": "antigo",
+    "final": "imprevisível"
+  },
+  {
+    "titulo": "A Mentira",
+    "genero": "comédia",
+    "ano": "recente",
+    "final": "feliz"
+  },
+  {
+    "titulo": "La La Land",
+    "genero": "romance",
+    "ano": "recente",
+    "final": "imprevisível"
+  },
+  {
+    "titulo": "Orgulho e Preconceito",
+    "genero": "romance",
+    "ano": "antigo",
+    "final": "feliz"
+  },
+  {
+    "titulo": "Hereditário",
+    "genero": "terror",
+    "ano": "recente",
+    "final": "imprevisível"
+  },
+  {
+    "titulo": "Invocação do Mal",
+    "genero": "terror",
+    "ano": "recente",
+    "final": "feliz"
+  }
+]
